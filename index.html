@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura SJC - CORONAVÍRUS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-imagem.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+    <link rel="stylesheet" href="css/unslider.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+    <link rel="stylesheet" href="css/unslider-dots.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+</head>
+<body>
+    <header id="topo">
+        <img src="img/18.png" class="imagem-letra" onclick="tamanhoLetra()"/>
+        <div class="div-logo-texto">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Prefeitura São José dos Campos" /></a>
+        </div>
+        <span class="span-horario"></span>
+        <nav>
+            <ul class="menu">
+                <li><a href="covid19.html">Protocolos e Técnicas</a></li>
+                <li><a href="vacinacao.html">Vacinação</a></li>
+                <li><a href="sistema.html">Sistema de Saúde</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="h1-principal">São José dos Campos contra a Covid-19</h1>
+        <h3 class="frase-h3">Una-se a nós na luta pela saúde e segurança da população de São José dos Campos</h3>
+        <p>A cidade de São José dos Campos, juntamente com a equipe de desenvolvedoras Web da SoulCode Academy, está na linha de frente na luta contra a pandemia do novo coronavírus.</p>
+        <p>Aqui você encontra informações atualizadas sobre  vacinação, leitos de UTI e enfermaria, como se proteger da doença, protocolos de segurança e potenciais técnicas de tratamento e medicamentos.</p>
+        <hr>
+        <section>
+            <h2>Saiba mais</h2>
+            <div id="section-cards">
+                <div id="card-protocolo" class="card">
+                    <div class="img-card">
+                        <img class="icone-principal" src="img/protocolos.png" alt="Ícone prancheta"/>
+                    </div>
+                    <div class="texto-card">
+                        <p class="p-card">Conheça os protocolos de combate à doença adotados de acordo com a OMS (Organização Mundial da Saúde), potenciais técnicas de tratamento e novos medicamentos.</p>
+                    </div>
+                </div>
+                <div id="card-vacina" class="card">
+                    <div class="img-card">
+                        <img class="icone-principal" src="img/vacina.png" alt="Ícone vacina"/>
+                    </div>
+                    <div class="texto-card">
+                        <p class="p-card">Informações sobre as vacinas aprovadas, suas eficácias e seus métodos, calendário de vacinação em São José dos Campos e formulário de cadastro para agilizar o processo de vacinação.</p>
+                    </div>
+                </div>
+                <div id="card-leitos" class="card">
+                    <div class="img-card">
+                        <img class="icone-principal" src="img/leitos.png" alt="Ícone leito de hospital"/>
+                    </div>
+                    <div class="texto-card">
+                        <p class="p-card">Descubra os números de ocupação de leitos de UTI e enfermaria em São José dos Campos, além da fase de alerta atual na cidade e o funcionamento dos setores econômicos.</p>
+                    </div>
+                </div>
+                <div id="card-quem-somos" class="card">
+                    <div class="img-card">
+                        <img class="icone-principal" src="img/quem-somos.png" alt="Ícone grupo de pessoas"/>
+                    </div>
+                    <div class="texto-card">
+                        <p class="p-card">Quer saber mais sobre a parceria da prefeitura de São José dos Campos com as desenvolvedoras da SoulCode Academy? Clique aqui e conheça esse projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="section-galeria">
+            <h2>Galeria de vacinação São José dos Campos 2021</h2>
+            <div class="my-slider">
+                <ul>
+                    <li><img class="img-galeria" src="img/vacina1.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina2.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina3.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina4.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina5.png" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina6.png" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina7.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina8.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina9.jpg" alt=""></li>
+                    <li><img class="img-galeria" src="img/vacina10.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Dúvidas Frequentes</h2>
+            <div id="accordion">
+                <h3>O que é o novo coronavírus?</h3>
+                <div class="divs-acco">
+                    <p>Os coronavírus causam infecções respiratórias em seres humanos e em animais. Geralmente, são doenças respiratórias leves a moderadas, semelhantes a um resfriado comum. Já o novo coronavírus é uma nova cepa do vírus (2019-nCoV) que foi notificada em humanos pela primeira vez na cidade de Wuhan, na província de Hubei, na China.</p>
+                </div>
+                <h3>Quais os sintomas do coronavírus?</h3>
+                <div class="divs-acco">
+                    <p> Os sinais clínicos mais comuns da Covid-19 são principalmente respiratórios, semelhantes aos de um resfriado:</p>
+                    <ul>
+                        <li>Tosse seca</li>
+                        <li>Febre</li>
+                        <li>Perda do olfato/paladar</li>
+                        <li>Dor de garganta</li>
+                        <li>Coriza</li>
+                        <li>Cansaço</li>
+                        <li>Dor de cabeça</li>
+                        <li>Dificuldade de respirar</li>
+                    </ul>
+                    <p>Alguns casos evoluem para pneumonia, caracterizada por dificuldades respiratórias. Recentemente, as perdas de olfato e de paladar foram reconhecidas como sintomas associados. Há, ainda, outros sintomas menos comuns, como conjuntivite, náuseas, dor de estômago, diarreia, dor de cabeça e lesões de pele e alteração do nível de consciência. Por se tratar de uma doença nova, o conhecimento a respeito da Covid-19 está em constante evolução, conforme novas pesquisas são publicadas.</p>
+                </div>
+                <h3>Como o coronavírus é transmitido?</h3>
+                <div class="divs-acco">
+                    <p>Por se tratar de uma doença nova, os cientistas ainda estão descobrindo uma série de fatores relacionados a ela. Mas já se sabe que a transmissão se dá por secreções contaminadas, como gotículas de saliva, espirro, tosse e catarro. Deve-se evitar o contato pessoal próximo, como toque ou aperto de mão, e o toque em objetos ou superfícies contaminados, seguido de contato com a boca, o nariz ou os olhos. O uso de máscara é fundamental para todos.</p>
+                </div>
+                <h3>A pessoa pode transmitir o coronavírus mesmo sem apresentar sintoma?</h3>
+                <div class="divs-acco">
+                    <p>Sim. Pelos dados apresentados até momento, o período de incubação do vírus pode variar de dois a 14 dias. Durante esse tempo, o vírus tem capacidade de transmissão. Por isso, é importante adotar medidas gerais, como lavar as mãos com frequência e não compartilhar objetos de uso pessoal. A transmissibilidade dos pacientes infectados por SARSCoV é em média de sete dias após o início dos sintomas. No entanto, dados preliminares do coronavírus (SARS-CoV-2) sugerem que a transmissão possa ocorrer mesmo sem o aparecimento de sinais e sintomas. Ou seja, a doença pode ser transmitida mesmo em casos assintomáticos ou antes que a pessoa comece a apresentar sintomas mais claros. Até o momento, não há informações suficientes de quantos dias anteriores ao início dos sinais e sintomas uma pessoa infectada passa a transmitir o vírus.</p>
+                </div>
+                <h3>Como é feito o tratamento contra o coronavírus?</h3>
+                <div class="divs-acco">
+                    <p>Não existe uma medicação específica para o vírus. O tratamento é feito com base nos sintomas individuais de cada paciente.</p>
+                </div>
+                <h3>Como se prevenir contra o coronavírus?</h3>
+                <div class="divs-acco">
+                    <p>Neste momento de pandemia do novo coronavírus, é muito importante que você siga as orientações do Ministério da Saúde e dos governos estaduais e municipais. Cada um de nós precisa fazer sua parte:</p>
+                    <ul>
+                        <li>Lavar as mãos frequentemente com água e sabão por pelo menos 20 segundos, incluindo o espaço entre os dedos, as unhas e os punhos;</li>
+                        <li>Lavar as mãos principalmente antes de comer e após tossir ou espirrar;</li>
+                        <li>Se não tiver água e sabão, usar desinfetante para as mãos à base de álcool 70% (líquido ou gel);</li>
+                        <li>Evitar tocar nos olhos, o nariz e a boca com as mãos não lavadas;</li>
+                        <li>Usar lenço descartável para higiene nasal;</li>
+                        <li>Cobrir o nariz e a boca ao espirrar ou tossir com um lenço de papel descartável ou com a parte interna do cotovelo (nunca com as mãos);</li>
+                        <li>Não compartilhar objetos de uso pessoal, como talheres, pratos, copos ou garrafas;</li>
+                        <li>Manter os ambientes bem ventilados;</li>
+                        <li>Limpar e desinfetar objetos e superfícies tocados com frequência, como celulares;</li>
+                        <li>Evitar contato com pessoas que não estejam no seu convívio muito próximo.</li>
+                    </ul>
+                </div>
+                <h3>Qual é o tempo de incubação do novo coronavírus?</h3>
+                <div class="divs-acco">
+                    <p>O "período de incubação" se refere ao tempo entre a infecção do ser humano pelo vírus e o início dos sintomas da doença. De acordo com a Organização Mundial da Saúde (OMS), no caso da Covid-19 esse intervalo varia de 1 a 14 dias, geralmente ficando em torno de 5 dias.</p>
+                </div>
+                <h3>Quanto tempo o coronavírus permanece ativo em diferentes superfícies?</h3>
+                <div class="divs-acco">
+                    <p>As partículas virais liberadas junto com a saliva podem permanecer flutuando no ar por cerca de 40 minutos e até 2h30min. Os vírus que se depositam sobre uma superfície, dependendo das características dessa superfície, podem permanecer viáveis por algumas horas ou até dias. Estudo recente, publicado no New England Journal of Medicine, descobriu que o vírus é viável por até 72 horas em plásticos e aço inoxidável, 24 horas em papelão e quatro horas em cobre. A quantidade de vírus existentes nas superfícies vai diminuindo com o passar das horas, reduzindo o risco de contaminação. O mais importante é evitar tocar em superfícies com as quais muitas pessoas têm contato, o que inclui mesas, bancadas, maçanetas, interruptores, telefones, teclados, torneiras etc. A limpeza das superfícies com desinfetante ou sabão é muito eficaz.</p>
+                </div>
+            </div>
+            <span id="span-accordion">Fonte: <a href="https://portal.fiocruz.br/">https://portal.fiocruz.br/</a></span>
+        </section>
+        <a id="botao-topo" href="#topo">
+            <img src="img/subir.png">
+        </a>
+    </main>
+    <footer>
+        <div class="div-logo-footer">
+            <img class="logo-footer" src="img/logo.png" alt="Logo Prefeitura São José dos Campos" />
+        </div>
+        <div class="div-endereco-footer">
+            Prefeitura de São José dos Campos
+            <br/>
+            Rua José de Alencar, 123, Centro | CEP: 12209-904 
+            <br/>
+            +55 (12) 3947-8000
+        </div>
+        <div class="div-redes">
+            <a  href="https://twitter.com/prefeiturasjc" target="_blank"><img class="redes-sociais" src="img/redes/cor-twitter.png" alt="Ícone Twitter" /></a>
+            <a  href="https://www.facebook.com/PrefeituraSJC/" target="_blank"><img class="redes-sociais" src="img/redes/cor-facebook.png" alt="Ícone Facebook" /></a>
+            <a  href="https://www.instagram.com/prefeiturasjcamposoficial" target="_blank"><img class="redes-sociais" src="img/redes/cor-instagram.png" alt="Ícone Instagram" /></a>
+            <a  href="http://www.youtube.com/channel/UCAE2QZaYE_434DJrp32aPkQ" target="_blank"><img class="redes-sociais" src="img/redes/cor-youtube.png" alt="Ícone Youtube" /></a>
+        </div>
+    </footer>
+
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="bibliotecas/unslider-min.js"></script> <!--Script da galeria de fotos - Plugin JQuery-->
+    <script src="js/js.js"></script>
+</body>
+</html>

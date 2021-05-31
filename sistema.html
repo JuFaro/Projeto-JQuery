@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de Saúde SJC</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo-imagem.png">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.structure.css" />
+        <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+        <link rel="stylesheet" href="css/unslider.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+        <link rel="stylesheet" href="css/unslider-dots.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+
+    </head>
+    <header id="topo">
+        <img src="img/18.png" class="imagem-letra" onclick="tamanhoLetra()"/>
+        <div class="div-logo-texto">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Prefeitura São José dos Campos" /></a>
+        </div>
+        <span class="span-horario"></span>
+        <nav>
+            <ul class="menu">
+                <li><a href="covid19.html">Protocolos e Técnicas</a></li>
+                <li><a href="vacinacao.html">Vacinação</a></li>
+                <li><a href="sistema.html">Sistema de Saúde</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+       
+            <h1>Sistema de Saúde</h1>
+            <h2>Taxa de ocupação de leitos</h2>
+    <!------------Div da enfermaria----------> 
+    <div style="display: flex;">
+        <div style="width: 69%;">
+            <h4 style="margin-bottom: 20px;">Digite a porcentagem de ocupação para verificar a fase atual</h4>
+            <div class="conteudo">
+                <div class="caixa">
+                    <h3 class="legenda-leitos">Ocupação na Enfermaria</h3>
+    <!------------barra de progresso da enfermaria---------->
+                    <input type="text" class="input-leitos" placeholder="Digite a Ocupação" id="enfermaria" onblur="barra()">
+                    <div id="myLinha">
+                        <div id="myBarra"></div>
+                    </div>
+                </div>
+    
+    <!------------Div da UTI--------------->
+                <div class="caixa" id="caixa-uti">
+                    <h3 class="legenda-leitos">Ocupação na UTI</h3>
+    <!------------barra de progresso da UTI--------------->
+                    <input class="input-leitos" type="text" placeholder="Digite a Ocupação" id="uti" onblur="move()">
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                </div> 
+    
+    <!------------Div do Resultado da fase--------------->
+                <div class="caixa">
+                    <h3 class="legenda-leitos">Fase de Alerta</h3>
+                    <div id="fase"></div>
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <p>A fase se altera se acordo com o número de ocupação dos leitos de UTI, de acordo com a tabela abaixo, porém, caso a porcentagem de leitos da enfermaria ocupados seja maior que 85, a fase piora em um grau em relação ao que estaria simplesmente analisando o número da UTI.</p>
+            </div>
+             <!------------------------Imagem da tabela----------- -->
+             <div id="div-img-ocupacao">
+                <img src="img/ocupacao.jpg" alt="tabela de restrição">
+            </div>
+        </div>
+                       
+                    <!----------Tabela de restrições do Comércio--------------> 
+        <div id="div-tabela">
+            
+            <table id="tabela">
+                <tr>
+                    <td><p>Espaços públicos</p></td>
+                    <td id="espaços"></td>
+                </tr>
+                <tr>
+                    <td><p>Atividades imobiliárias</p></td>
+                    <td id="imobiliaria"></td>
+                </tr>
+                <tr>
+                    <td><p>Concessionárias</p></td>
+                    <td id="conce"></td>
+                </tr>
+                <tr>
+                    <td><p>Escritórios</p></td>
+                    <td id="escritorio"></td>
+                </tr>
+                <tr>
+                    <td><p>Bares, restaurantes..</p></td>
+                    <td id="bares"></td>
+                </tr>
+                <tr>
+                    <td><p>Comércio</p></td>
+                    <td id="comercio"></td>
+                </tr>
+                <tr>
+                    <td><p>Shopping center</p></td>
+                    <td id="shopping"></td>
+                </tr>
+                <tr>
+                    <td><p>Salão de beleza</p></td>
+                    <td id="salao"></td>
+                </tr>
+                <tr>
+                    <td><p>Academia</p></td>
+                    <td id="academia"></td>
+                </tr>
+                <tr>
+                    <td><p>Teatro, cinemas</p></td>
+                    <td id="teatro"></td>
+                </tr>
+                <tr>
+                    <td><p>Eventos com aglomerações</p></td>
+                    <td id="eventos"></td>
+                </tr>
+                <tr>
+                    <td><p>Educação</p></td>
+                    <td id="educacao"></td>
+                </tr>
+                <tr>
+                    <td><p>Transporte</p></td>
+                    <td id="transporte"></td>
+                </tr>
+          </table>
+        </div>
+    </div>
+    
+            
+
+
+    
+    <a id="botao-topo" href="#topo"><img src="img/subir.png"></a>
+        <footer>
+            <div class="div-logo-footer">
+                <img class="logo-footer" src="img/logo.png" alt="Logo Prefeitura São José dos Campos" />
+            </div>
+            <div class="div-endereco-footer">
+                Prefeitura de São José dos Campos
+                <br/>
+                Rua José de Alencar, 123, Centro | CEP: 12209-904 
+                <br/>
+                +55 (12) 3947-8000
+            </div>
+            <div class="div-redes">
+                <a  href="https://twitter.com/prefeiturasjc" target="_blank"><img class="redes-sociais" src="img/redes/cor-twitter.png" alt="Ícone Twitter" /></a>
+                <a  href="https://www.facebook.com/PrefeituraSJC/" target="_blank"><img class="redes-sociais" src="img/redes/cor-facebook.png" alt="Ícone Facebook" /></a>
+                <a  href="https://www.instagram.com/prefeiturasjcamposoficial" target="_blank"><img class="redes-sociais" src="img/redes/cor-instagram.png" alt="Ícone Instagram" /></a>
+                <a  href="http://www.youtube.com/channel/UCAE2QZaYE_434DJrp32aPkQ" target="_blank"><img class="redes-sociais" src="img/redes/cor-youtube.png" alt="Ícone Youtube" /></a>
+            </div>
+        </footer>
+        
+        <script src="bibliotecas/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="bibliotecas/unslider-min.js"></script> <!--Script da galeria de fotos - Plugin JQuery-->
+        <script src="js/js.js"></script>
+    </body>
+</html>
+    

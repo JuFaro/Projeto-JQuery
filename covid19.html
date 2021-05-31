@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos e Técnicas de Tratamento</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo-imagem.png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+    <link rel="stylesheet" href="css/unslider.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+    <link rel="stylesheet" href="css/unslider-dots.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+	
+
+</head>
+<body>
+	<header id="topo">
+		<img src="img/18.png" class="imagem-letra" onclick="tamanhoLetra()"/>
+        <div class="div-logo-texto">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Prefeitura São José dos Campos" /></a>
+        </div>
+        <span class="span-horario"></span>
+        <nav>
+            <ul class="menu">
+                <li><a href="covid19.html">Protocolos e Técnicas</a></li>
+                <li><a href="vacinacao.html">Vacinação</a></li>
+                <li><a href="sistema.html">Sistema de Saúde</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<h1 id="h1covid" >Protocolos e Técnicas de Tratamento</h1>
+		<div class="covBoxDiv1-sep">
+			<!-- O QUE É------ -->
+			<h2 id="btnSlideToggle1" style="cursor: pointer;" >Covid-19: O Que é?</h2>
+			<div id="display1">
+				<img src="img/covid_virus.png" alt="">
+				<p>
+				A Covid-19 é uma infecção respiratória agudacausada pelo coronavírus SARS-CoV-2,potencialmente grave, de elevadatransmissibilidade e de distribuição global. <br>
+				O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de pacientes com pneumonia decausa desconhecida na cidade de Wuhan, província de Hubei, China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus dafamília Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.
+				</p>
+				Saiba mais em:
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance">OMS
+					- Coronavirus.</a>
+			</div>
+		</div>
+		<div id="covBox1" >
+			<div class="covBoxDiv1">
+				<!-- SINTOMAS--------------- -->
+				<h2 id="btnSlideToggle2" >Sintomas</h2>
+				<div id="display2">
+					
+					<p>
+						A COVID-19 afeta diferentes pessoas de diferentes maneiras. A maioria das pessoas infectadas
+						apresentará sintomas leves a moderados da doença e não precisarão ser hospitalizadas.
+					</p>
+					<ul> <strong>Sintomas mais comuns:</strong> 
+						<li>febre</li>
+						<li>tosse seca</li>
+						<li>cansaço</li>
+					</ul>
+					<ul> <strong>Sintomas menos comuns:</strong> 
+						<li>dores e desconfortos</li>
+						<li>dor de garganta</li>
+						<li>diarreia</li>
+						<li>conjuntivite</li>
+						<li>dor de cabeça</li>
+						<li>perda de paladar ou olfato</li>
+						<li>erupção cutânea na pele ou descoloração dos dedos das mãos ou dos pés</li>
+					</ul>
+
+					<ul> <strong> Sintomas graves:</strong>
+						<li>dificuldade de respirar ou falta de ar</li>
+						<li>dor ou pressão no peito</li>
+						<li>perda de fala ou movimento</li>
+					</ul>
+					<p>Procure atendimento médico imediato se tiver sintomas graves. Sempre ligue antes de ir ao
+						médico ou posto de saúde, clínicas ou hospitais.</p>
+					Saiba mais em
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance">OMS
+						- Coronavirus</a>
+				</div>
+			</div>
+
+			<div class="covBoxDiv1">
+				<!-- TRANSMISSÃO--------------- -->
+				<h2 id="btnSlideToggle3" >Trasmissão</h2>
+				<div id="display3">
+					<img src="img/covid_Htransmitindo.png" alt="">
+					
+					<p>
+
+						A transmissão costuma ocorrer pelo ar ou por contato pessoal com secreções contaminadas, como:
+						<ul>
+							<li>Gotículas de saliva;</li>
+							<li>Espirro;</li>
+							<li>Tosse;</li>
+							<li>Catarro;</li>
+							<li>Contato pessoal próximo, como toque ou aperto de mão com pessoa infectada;</li>
+							<li>Contato com objetos ou superfícies contaminadas, seguido de contato com a boca, nariz ou olhos.</li>
+						</ul>
+
+					</p>
+					Saiba mais em
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance">OMS
+						- Coronavirus</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="covAllBanner">
+			<h2>Proteja-se!</h2>
+			<div class="covBanner">
+				<div>
+					<img src="img/covid_lavamao.png" alt="">
+					<p>
+						Lave suas mãos com frequência. Use sabão e água ou álcool em gel.
+					</p>
+
+
+				</div>
+				<div>
+					<img src="img/covid_mascara.png" alt="">
+					<p>
+						Use máscara sempre que sair de casa.
+					</p>
+
+
+				</div>
+				<div>
+					<img src="img/covid_ficalonge.png" alt="">
+					<p>
+						Evite aglomerações.
+					</p>
+
+
+				</div>
+
+				<div>
+					<img src="img/covid_naotoque.png" alt="">
+					<p>
+						Evite tocar olhos, nariz ou boca.
+					</p>
+
+
+				</div>
+			
+
+			</div>
+			<div  class="covBanner">
+				<div>
+					<img src="img/covid_uselenco.png" alt="">
+					<p>
+						Cubra seu nariz e boca com o braço dobrado ou um lenço ao tossir ou expirar.
+					</p>
+
+
+				</div>
+				<div>
+					<img src="img/covid_ficacasa.png" alt="">
+					<p>
+						Sempre que possível fique em casa.
+					</p>
+
+
+				</div>
+				<div>
+					<img src="img/covid_hdoente2.png" alt="">
+					<p>
+						Procure atendimento médico se tiver febre, tosse ou dificuldade para respirar.
+					</p>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="covBox2">
+
+			<div class="covBoxDiv2">
+				<!-- NOVOS MEDICAMENTOS------ -->
+				<h2 id="btnToggle1" >Novos Medicamentos</h2>
+				<div id="display4">
+					
+					<p><strong> Soro desenvolvido no Brasil</strong></p>
+					<p>O soro, um líquido injetável rico em anticorpos contra o coronavírus, é destinado a pessoas
+						já infectadas e busca frear o agravamento da doença, impedindo por exemplo que ela ataque o
+						pulmão.</p>
+					<p>Os testes com cobaias tiveram resultados "extremamente" efetivos, segundo o Butantan.</p>
+
+					<p><strong> Antiviral inicia testes</strong></p>
+					<p>Segundo a empresa, o antiviral mostrou uma ação "potente" em testes in vitro no laboratório e
+						é projetado para ser usado aos primeiros sintomas de covid-19.</p>
+					<p> O medicamento da Pfizer é do tipo inibidor de protease — uma enzima essencial para o vírus
+						se multiplicar.</p>
+
+					<p><strong> Coquetel: metas atingidas na terceira fase</strong></p>
+					<p>O coquetel, uma combinação das substâncias casirivimab e imdevimab com aplicação intravenosa,
+						configura um tipo de tratamento chamado de anticorpos monoclonais — quando anticorpos de uma
+						pessoa que se recuperou da doença são selecionados e copiados em laboratório.</p>
+
+					<p><strong> Antiviral pode acelerar eliminação do vírus</strong></p>
+					<p>as farmacêuticas MSD e Ridgeback apresentaram resultados preliminares de um ensaio clínico em
+						fase 2 com o antiviral oral molnupiravir, envolvendo 202 pessoas infectadas com o
+						coronavírus nos Estados Unidos e não hospitalizadas.</p>
+
+					Saiba mais em <a href="https://www.bbc.com/portuguese/geral-56573200">BBC - novos
+						tratamentos em testes contra a covid-19</a>
+				</div>
+			</div>
+
+			<div class="covBoxDiv2">
+				<!-- TRATAMENTOS------ -->
+				<h2 id="btnToggle2" >Tratamentos</h2>
+				<div id="display5">
+					
+					<p>
+						Cientistas do mundo todo estão trabalhando para encontrar e desenvolver tratamentos para a COVID-19. <br>
+						Os tratamentos paliativos mais indicados incluem oxigênio, para casos mais graves e pacientes de alto risco devido a outras doenças, e suportes respiratórios, como ventilação, para pacientes em estado crítico. <br>
+						A Dexametasona é um corticosteroide que pode ajudar a reduzir o tempo de ventilação e salvar as vidas de pacientes em situação mais grave.
+						A OMS não recomenda a automedicação, incluindo ingestão de antibióticos, como prevenção ou cura da COVID-19.
+					</p>
+					Saiba mais em
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19#:~:text=treatment">OMS
+						- Coronavirus</a>
+						<br>
+
+						<img src="img/covid_pesquisas.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="covBox3">
+			<div class="covBoxDiv3">
+				<!-- HOSPITAIS----- -->
+				<h2 id="btnFadeTo1" >Hospitais</h2>
+				<div id="display6">
+					<ul>
+						<li>Hospital Municipal - R. Saigiro Nakamura, 800 - Vila Industrial, São José dos Campos</li>
+						<li>Hospital de Clínica Sul - Praça Natal, 55 - Parque Industrial, São José dos Campos</li>
+					</ul>
+					<img src="img/covid_location.png" alt="">
+
+				</div>
+			</div>
+
+			<div class="covBoxDiv3">
+				<!-- UBS's--------------- -->
+				<h2 id="btnFadeTo2" >UBS's</h2>
+				<div id="display7">
+					<ul>
+						<li>Eugênio de Melo - Rua Eugênio Augusto de Melo, 101, Eugênio de Melo</li>
+						<li>Novo Horizonte - Rua Tancredo Neves, 5120, Novo Horizonte</li>
+						<li>UPA Alto da Ponte - Rua Alziro Lebrão, 76, Alto da Ponte</li>
+						<li>São Francisco Xavier - Rua 15 de Novembro, s/n, distrito de São Francisco Xavier (Estrada Pedro David)</li>
+						<li>Campo dos Alemães - Rua João Batista do Nascimento, 359, Campos dos Alemães</li>
+						<li>Putim - Avenida João Rodolfo Castelli, 1035, Putim</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="covBox4">
+			<div class="covBoxDiv4">
+				<!-- VIAJOU?----- -->
+				<p>
+					<button id="dialog-link" >
+						Viajou? <br> Confira aqui as Recomendações!
+					</button>
+				</p>
+
+				<!-- ui-dialog -->
+				<div id="dialog" title="Viajou?">
+					<p>
+						Quem esteve em países com casos confirmados da doença e apresentar sintomas suspeitos deve.
+						<ul>
+							<li>Evitar contato com outras pessoas</li>
+							<li>Procurar um serviço médico imediatamente</li>
+							<li>Seguir os cuidados recomendados</li>
+						</ul>
+
+						<img src="img/covid_mundo.png" alt="">
+			
+					</p>
+				</div>
+			</div>
+
+			<div class="covBoxDiv4">
+				<!-- ISOLAMENTO DOMICILIAR--------------- -->
+				<p>
+					<button id="dialog-link2">
+						Isolamento Domiciliar: <br>
+						Cuidados para o paciente.
+					</button>
+				</p>
+			
+				<!-- ui-dialog -->
+				<div id="dialog2" title="Isolamento Domiciliar">
+					<img src="img/ID-paciente.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="covBoxDiv4">
+				<!--ISOLAMENTO DOMICILIAR CASA--------------- -->
+			<p>
+				<button id="dialog-link3" >
+					Isolamento Domiciliar : <br>
+					Cuidados para os que vivem no mesmo domicílio que o paciente.							
+					
+				</button>
+			</p>
+				
+				<!-- ui-dialog -->
+				<div id="dialog3" title="Isolamento Domiciliar">
+					<img src="img/ID-gerais.jpg" alt="">
+						
+				</div>
+			</div>
+
+		</div>
+		<a id="botao-topo" href="#topo"><img src="img/subir.png"></a>
+	</main>
+	<footer>
+        <div class="div-logo-footer">
+            <img class="logo-footer" src="img/logo.png" alt="Logo Prefeitura São José dos Campos" />
+        </div>
+        <div class="div-endereco-footer">
+            Prefeitura de São José dos Campos
+            <br/>
+            Rua José de Alencar, 123, Centro | CEP: 12209-904 
+            <br/>
+            +55 (12) 3947-8000
+        </div>
+        <div class="div-redes">
+            <a  href="https://twitter.com/prefeiturasjc" target="_blank"><img class="redes-sociais" src="img/redes/cor-twitter.png" alt="Ícone Twitter" /></a>
+            <a  href="https://www.facebook.com/PrefeituraSJC/" target="_blank"><img class="redes-sociais" src="img/redes/cor-facebook.png" alt="Ícone Facebook" /></a>
+            <a  href="https://www.instagram.com/prefeiturasjcamposoficial" target="_blank"><img class="redes-sociais" src="img/redes/cor-instagram.png" alt="Ícone Instagram" /></a>
+            <a  href="http://www.youtube.com/channel/UCAE2QZaYE_434DJrp32aPkQ" target="_blank"><img class="redes-sociais" src="img/redes/cor-youtube.png" alt="Ícone Youtube" /></a>
+        </div>
+    </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="bibliotecas/unslider-min.js"></script> <!--Script da galeria de fotos - Plugin JQuery-->
+	<script src="js/js.js"></script>
+    
+</body>
+</html>

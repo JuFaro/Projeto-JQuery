@@ -1,0 +1,642 @@
+#html{
+    font-size: 18px;
+}
+body{
+    font-family: Arial,Helvetica,sans-serif;
+    /* font-family: 'Lora', serif; */
+    background-color: rgb(248, 242, 242);
+}
+header{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #004997;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.imagem-letra{
+    position: fixed;
+    width: 100px;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
+}
+.span-horario{
+    color: white;
+}
+nav{
+    margin-top: 20px;
+    background-color: #f8af05;
+    padding: 0.5rem 5rem;
+    border-top: 3px solid white;
+}
+.menu {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.menu li a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    /* text-shadow: 4px 4px 5px white; */
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    padding: 30px 0;
+    width: 100%;
+    margin: 20px 0;
+}
+#section-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border-radius: 1rem;
+    /* height: 400px; */
+    width: 210px;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+}
+.img-card{
+    width: 100%;
+    text-align: center;
+}
+.icone-principal{
+    width: 70%;
+}
+.p-card{
+    font-size: 0.9rem;
+    color: #002e5f;
+}
+.img-galeria{
+    width: 100%;
+}
+.my-slider{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.divs-acco{
+    height: 200px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color:white;
+    background-color: black;
+}
+#h1-principal{
+    background-color: red;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+.frase-h3{
+    text-align: center;
+    color: rgb(88, 88, 88);
+    font-size: 1.3rem;
+}
+p{
+    text-align: justify;
+    text-indent: 1.5rem;
+    line-height: 1.4rem;
+}
+#span-accordion{
+    padding-top: 1.25rem;
+    float: right;
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: #f8af05;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem;
+}
+.div-logo-footer{
+    width: 25%;
+}
+.logo-footer{
+    width: 100%;
+}
+.div-redes{
+    display: flex;
+    width: 25%;
+    text-align: right;
+    justify-content: flex-end;
+}
+.redes-sociais{
+    padding-top: 30%;
+    width: 35px;
+    margin: 0 0.5rem;
+}
+#botao-topo img{
+    width: 80px;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    opacity: 0.3;
+}
+/*------------ Vacinação ---------------------*/
+#section-formulario{
+    background-color: black;
+}
+#form-vacina{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+fieldset{
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+#legend-formulario{
+    background-color: #f8af05;
+    color: black;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.fieldset-menor{
+    background-color: #fff6c5;
+}
+#form-vacina input, select, label, #botao-form{
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+select{
+    width: 100%;
+}
+.div-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+.input-100{
+    width: 60%;
+}
+.div-form{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.div-form2{
+    width: 45%;
+    margin: 10px;
+}
+#gestante{
+    display: none;
+}
+#progressbar{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+}
+#infos{
+    margin: 1rem 0.5rem;
+}
+#botao-dados{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    background-color: gray;
+    cursor: pointer;
+    display: block;
+}
+#imprimir-dados{
+    margin-top: 30px;
+    height: 200px;
+}
+/*------------------- Protocolos e Técnicas ------------ */
+
+
+ /* O QUE É | SINTOMAS | TRANSMISSÃO */
+#covBox1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.covBoxDiv1{
+    text-align: center;
+    width: 45%;
+    align-items: center;
+    padding: 20px ;
+    border-radius: 10px;
+    border: 2px solid #f8af05;
+    background-color: white;
+}
+.covBoxDiv1-sep{
+    text-align: center;
+    align-items: center;
+    padding: 20px ;
+    border-radius: 10px;
+    border: 2px solid #f8af05;
+    background-color: white;
+}
+.covBoxDiv1 h2{
+    color:#004997 ;
+    cursor: pointer;
+}
+
+.covBoxDiv1 div ul{
+    text-align: justify;
+
+}
+.covBoxDiv1 div img{
+    width: 100px;
+    height: 100px;
+}
+.covBoxDiv1-sep div img{
+    width: 100px;
+    height: 100px;
+ 
+}
+
+/* BANNER PROTEJA-SE */
+#covAllBanner{
+    margin: 20px;
+    border: 2px solid #f8af05;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: white;
+
+}
+
+#covAllBanner h2{
+    color:#004997 ;
+}
+
+#covAllBanner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    
+  }
+
+.covBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px ;
+    
+}
+
+.covBanner div{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px ;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.covBanner div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #d7ebff
+
+  }
+    
+.covBanner div img{
+    width: 100px;
+    height: 100px;
+}
+.covBanner div p{
+    text-align: center;
+    text-indent: 0;
+}
+
+
+/* NOVOS MEDICAMENTOS| TRATAMENTOS*/
+
+#covBox2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #f8af05;
+    background-color: white;
+}
+
+.covBoxDiv2{
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    padding: 20px ;
+}
+
+
+.covBoxDiv2 h2{
+    color:#004997 ;
+    cursor: pointer;
+
+}
+.covBoxDiv2 div p{
+    text-align: justify;
+}
+.covBoxDiv2 div img{
+    margin-top: 5rem;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/* HOSPITAIS | UBS'S*/
+
+#covBox3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #f8af05;
+    background-color: white;
+}
+
+.covBoxDiv3{
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    padding: 20px ;
+
+}
+
+.covBoxDiv3 h2{
+    color:#004997 ;
+    text-align: center;
+    cursor: pointer;
+}
+.covBoxDiv3 div ul{
+    text-align: justify;
+}
+.covBoxDiv3 div img{
+
+    width: 150px;
+    height: 150px;
+}
+
+
+ /* ISOLAMENTO DOMICILIAR | VIAJOU */
+ #covBox4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.covBoxDiv4 p button{
+    background-color:#d1d6d9 ;
+    color:#004997;
+    height: 100px;
+    width: 300px;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #f8af05 ;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#dialog{
+    text-align: center;
+    
+}
+#dialog ul{
+    text-align: justify;
+    
+}
+
+#dialog img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+#dialog2 img{
+    width: 800px;
+    height: 800px;
+}
+#dialog3 img{
+    width: 800px;
+    height: 800px;
+}
+
+/*------------ Vacinação ------------ */
+
+.accordion {
+    background-color: #d9f0ff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: #004997;
+    color: white;
+}
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    
+}
+.banner img, .banner h2 {
+    display: inline-block;
+}
+  
+.banner{text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto
+}
+  
+.container{ 
+    margin-left: auto;
+    margin-right: auto
+}
+    
+.formulario {border-color:black ;
+    border-style: double;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea {
+    width: 400px;
+    height: 50px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+/*------------- Quem Somos --------------- */
+
+#historia {
+    text-align: justify;
+    background-color: #fff6c5;
+    padding: 2rem;
+} 
+#div-mapa{
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+    padding: 1rem;
+}
+#mapa{
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px;
+}
+#fotos { display: flex;
+    justify-content: space-evenly;
+}
+#fotos div{
+    width: 30%;
+}
+#fotos div img{
+    width: 100%;
+}
+#img2,#img3, #img1 { 
+    box-shadow: 8px 8px 5px rgb(83, 82, 82);
+}
+
+#equipe { 
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+    position: relative;
+}
+#effect1,#effect2,#effect3,#effect4 { 
+    width: 250px; 
+    padding: 0.4em; 
+    position: relative; 
+    
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h4 {margin: 0; 
+    padding: 0.4em; 
+    text-align: center;
+}
+hr{ width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* ---------------- CSS Sistema de Saúde ----------------- */
+
+.legenda-leitos{
+    text-align: center;
+}
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+#myLinha {
+    width: 100%;
+    background-color: #ddd;
+}
+#myBarra {
+    width: 1%;
+    height: 30px;
+    background-color:green;
+}
+.caixa { 
+    width: 30%;
+    background-color: #d1d6d9;
+}
+#caixa-uti{
+    background-color: rgb(255, 104, 104);
+}
+.conteudo { display: flex;
+    justify-content: space-between;
+}
+#div-tabela{
+    width: 30%;
+}
+#div-img-ocupacao{
+    width: 100%;
+    margin-top: 50px;
+}
+#div-img-ocupacao img{
+    width: 100%;
+}
+#tabela{
+    margin-left: 20px;
+}
+#tabela p{
+    text-align: center;
+    text-indent: 0px;
+}
+ #tabela td {border: solid  1px #004997;
+    width: 250px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#tabela div p{
+    text-align: center;
+    text-indent: 0px;
+}
+#tabela div {border: solid  1px #004997;
+    border-radius: 5px;
+    padding: 3px;
+}
+#fase {
+    height: 83px;
+    font-size: 2.5rem;
+    text-align:center;
+}
+.input-leitos{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    box-sizing: border-box;
+}

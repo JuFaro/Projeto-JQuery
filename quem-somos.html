@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-imagem.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.css" />
+
+    <link rel="stylesheet" href="css/unslider.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+    <link rel="stylesheet" href="css/unslider-dots.css"/> <!--CSS da galeria de fotos - Plugin JQuery-->
+ </head>
+<body>
+    <header id="topo">
+        <img src="img/18.png" class="imagem-letra" onclick="tamanhoLetra()"/>
+        <div class="div-logo-texto">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Prefeitura São José dos Campos" /></a>
+        </div>
+        <span class="span-horario"></span>
+        <nav>
+            <ul class="menu">
+                <li><a href="covid19.html">Protocolos e Técnicas</a></li>
+                <li><a href="vacinacao.html">Vacinação</a></li>
+                <li><a href="sistema.html">Sistema de Saúde</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Quem somos</h1>
+            <button onclick="informarCliente()">Alterar informações do cliente</button>
+        </div>
+        <div id="historia">
+            <div id="div-mapa">
+                <img src="img/mapa.jpg" id="mapa">
+            </div>
+            <div id="div-texto-historia">
+                <h2> Nossa História</h2>
+                <p id="p-info-cliente">
+                    São José dos Campos uma cidade que une cultura, tradição e tecnologia. No núcleo urbano estão localizados institutos federais de pesquisa científica, empresas de tecnologia de ponta, prédios de arquitetura arrojada, universidades, faculdades e centros de formação de mão de obra qualificada. Por outro lado, a zona rural concentra quase 70% do território do município, boa parte em áreas de proteção ambiental.
+                    É o principal município da Região Metropolitana do Vale do Paraíba e o mais importante polo aeronáutico e aeroespacial da América Latina. A população também preserva a cultura local, influenciada pela história dos bandeirantes, que traçaram pela região os caminhos rumo ao ouro das Minas Gerais, e dos tropeiros que vinham do sul do estado vizinho. Hospitaleira, a cidade recebe bem os migrantes de todas as partes, muitos dos quais participam do crescimento local.
+                    Localizada estrategicamente entre São Paulo e Rio de Janeiro e ligada por modernas rodovias e pelo aeroporto, a cidade está bem próxima das praias, da região serrana e de outros destinos turísticos do vale. Entre uma ou duas horas de carro, é possível chegar a Ubatuba, Campos do Jordão ou Aparecida, onde fica a Basílica Nacional, maior santuário mariano do mundo.
+                    É destaque no país devido ao potencial de negócios, fator que impulsiona investimentos na área de hotelaria, comércio e serviços. Isso se verifica no enorme fluxo de pessoas que diariamente procuram São José em visitas a shoppings, polos industriais e tecnológicos e centros educacionais técnicos ou de nível superior.
+                    Aqui o desenvolvimento tecnológico e industrial está em harmonia com a natureza, com parques em todos os cantos, praças nos bairros e ruas arborizadas. O destaque é São Francisco Xavier, que tem uma paisagem verde preservada e vista panorâmica das cidades vizinhas, em meio a um relevo de montanhas e vales na Serra da Mantiqueira.
+                </p>
+            </div>
+        </div>
+        <section>
+            <div id="fotos"> 
+                <div>
+                    <img src="img/SJC1.jpg"  id="img1">
+                </div>
+                <div>
+                    <img src="img/SJC2.jpg" id="img2"> 
+                </div>
+                <div>
+                    <img src="img/SJC3.jpg" id="img3">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Equipe Desenvolvedora</h2>
+        <div id="equipe">
+            <div id="effect1">
+                <h4 class="ui-widget-header ui-corner-all">Aline Matias</h4>
+                <img src="img/aline.jpeg" width="200px">
+                <span id="aline"></span>
+            </div>
+            <div id="effect2">
+                <h4 class="ui-widget-header ui-corner-all">Geisiane Ferreira</h4>
+                <img src="img/geisi.jpeg" width="200px">
+                <span id="geisiane"></span>
+            </div>
+    
+            <div id="effect3">
+                <h4 class="ui-widget-header ui-corner-all">Juliana Fabricio</h4>
+                <img src="img/ju.jpeg" width="200px">
+                <span id="juliana"></span>
+            </div>
+    
+            <div id="effect4">
+                <h4 class="ui-widget-header ui-corner-all">Marília Nunes</h4>
+                <img src="img/marilia.jpeg" width="200px">
+                <span id="marilia"></span>
+            </div>
+        </div>
+        </section>
+        <a id="botao-topo" href="#topo"><img src="img/subir.png"></a>
+    </main>
+    <footer>
+        <div class="div-logo-footer">
+            <img class="logo-footer" src="img/logo.png" alt="Logo Prefeitura São José dos Campos" />
+        </div>
+        <div class="div-endereco-footer">
+            Prefeitura de São José dos Campos
+            <br/>
+            Rua José de Alencar, 123, Centro | CEP: 12209-904 
+            <br/>
+            +55 (12) 3947-8000
+        </div>
+        <div class="div-redes">
+            <a  href="https://twitter.com/prefeiturasjc" target="_blank"><img class="redes-sociais" src="img/redes/cor-twitter.png" alt="Ícone Twitter" /></a>
+            <a  href="https://www.facebook.com/PrefeituraSJC/" target="_blank"><img class="redes-sociais" src="img/redes/cor-facebook.png" alt="Ícone Facebook" /></a>
+            <a  href="https://www.instagram.com/prefeiturasjcamposoficial" target="_blank"><img class="redes-sociais" src="img/redes/cor-instagram.png" alt="Ícone Instagram" /></a>
+            <a  href="http://www.youtube.com/channel/UCAE2QZaYE_434DJrp32aPkQ" target="_blank"><img class="redes-sociais" src="img/redes/cor-youtube.png" alt="Ícone Youtube" /></a>
+        </div>
+    </footer>
+
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="bibliotecas/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="bibliotecas/unslider-min.js"></script> <!--Script da galeria de fotos - Plugin JQuery-->
+    <script src="js/js.js"></script>
+    </body>
+</html>
+
+
+
+
